@@ -1,0 +1,85 @@
+html{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.appWrapp {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.appWrapp>*{
+}
+
+
+.topLine{
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: seashell;
+}
+
+.topLine button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(223, 77, 61);
+    padding: 10px;
+    color: seashell;
+}
+
+.topLine button:active{
+    background-color: rgb(212, 119, 108);
+    
+}
+
+.topLine button .fa-arrow-left{ margin-right: 5px;}
+
+.content{
+    flex-direction: column;
+    overflow-y: scroll;
+    /*-webkit*/
+}
+
+.content img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.icon-bar{
+   
+    display: flex;
+}
+
+.icon-bar a{
+    background-color: salmon;
+    color: seashell;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(66, 18, 12, 20%);
+    flex: 1 1 50px;
+    font-size: 14px;
+}
+
+
+.icon-bar a:active{
+    background-color: rgb(195, 142, 136);}
+/*
+    a, a:link, a:visited { ... css ...}
+a:hover, a:visited:hover {... css ...}
+a:active,a.my-active {... css ...}
+a:focus {... css ...}*/
+
+
+.icon-bar .fa{
+    color: seashell;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
